@@ -1,0 +1,456 @@
+
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>RESPONSIVE
+      </title>
+      <!-- Bootstrap CSS CDN -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+      <!-- Our Custom CSS -->
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Font Awesome JS -->
+      <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+         <div class="sidebar-header">
+            <img src="logo2.png" class="d-none d-sm-block d-md-none d-block d-sm-none ">
+            <img src="logo.png" class="d-sm-none d-md-block d-md-none d-lg-block">
+         </div>
+         <ul class="list-unstyled components">
+            <li class="active">
+               <a href="#homeSubmenu">
+               <i class="fa fa-home mr-2 ">
+               </i>
+               Home
+               </a>
+            </li>
+            <li>
+               <a href="#">
+               <i class="fas fa-briefcase mr-2">
+               </i>
+               Profile
+               </a>
+               <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+               <i class="fas fa-copy mr-2">
+               </i>
+               Tracker
+               </a>
+               <ul class="collapse list-unstyled" id="pageSubmenu">
+                  <li>
+                     <a href="#">Page 1
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">Page 2
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">Page 3
+                     </a>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <a href="#">
+               <i class="fas fa-image mr-2">
+               </i>
+               Time&nbsp Sheet
+               </a>
+            </li>
+         </ul>
+         <ul class="list-unstyled CTAs">
+            <li>
+               <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+               <i class=" fa fa-bell mr-2" >
+               </i>
+               Notification
+               <span class="ml-1 badge bg-secondary">4
+               </span>
+               </a>
+               <ul class="collapse list-unstyled ovr-f " id="pageSubmenu2">
+                  <li>
+                     <a href="#">
+                        <h6> Notification-1</h6>
+                        <P>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</P>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <h6> Notification-2</h6>
+                        <P>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</P>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <h6> Notification-3</h6>
+                        <P>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</P>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <h6> Notification-4</h6>
+                        <P>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</P>
+                     </a>
+                  </li>
+               </ul>
+            </li>
+            <li>
+            </li>
+         </ul>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-navbar">
+         <div class="container-fluid">
+            <!-- <button type="button" id="sidebarCollapse" class="btn btn-info d-none d-sm-block d-md-none d-block d-sm-none  ">
+               <i class="fas fa-align-left"></i>
+               <span></span>
+               </button>
+               <button class="btn btn-dark d-inline-block d-lg-none ml-auto " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <i class="fas fa-align-justify"></i>
+               </button> -->
+            <button type="button" id="sidebarCollapse" class="btn btn-secondary">
+            <i class="fas fa-align-left">
+            </i>
+            <span> 
+            </span>
+            </button>
+            <div class="dropdown">
+               <button class="btn btn-secondary dropdown-toggle profile-dropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+               Profile
+               </button>
+               <ul class="dropdown-menu dropdown-menu-right navmenu1 " aria-labelledby="dropdownMenuButton1">
+                  <li>
+                     <a id="start-edit" class="dropdown-item" href="javascript:void(0)" >Edit
+                     </a>
+                  </li>
+                  <li>
+                     <a id="save-profile" class="dropdown-item" href="#">Save
+                     </a>
+                  </li>
+                  <li>
+                     <a class="dropdown-item" href="#">Logout
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="nav navbar-nav ml-auto navmenu1">
+                  
+               <li class="nav-item active">
+               <a class="nav-link" href="#">Welcome User Name</a>
+               </li>
+               <li class="nav-item active">
+                  <a class="nav-link" href="#"></a>
+                  </li>
+               <li class="nav-item">
+                  <a id="start-edit"  href="javascript:void(0)"  class="nav-link" href="#">Edit</a>
+                  </li>
+                  <li class="nav-item">
+                     <a id="save-profile"  class="nav-link" href="#">Save</a>
+                     </li>
+               <li class="nav-item">
+               <a class="nav-link" href="#">Logout</a>
+               </li>
+               </ul>
+               </div>
+               </div> -->
+      </nav>
+      <!-- Page Content  -->
+      <div id="content" class="content">
+      <a href="" id="edit"><i class="material-icons edit-p">edit</i></a>
+      <section>
+      <div class="container">
+      <div class="row">
+      <div class="col-lg-8" >
+      <div class="main-box">
+      <div class="container">
+      <div class="row">
+      <div class="left-box">
+      <div class="circle-pro">
+      <img src="Untitled-2.png">
+      </div>
+      </div>
+      <div class="right-box">
+      <div class="border-t">
+      <input class="form-control input-lg" id="inputlg" type="text" placeholder="What  happening ?...">
+      <!-- <div class="po-send ">Post</div> -->
+      </div>
+      </div>
+      <div class="col-lg-12" >
+      <div class="po-send "><i class="fa fa-paper-plane" aria-hidden="true"></i>
+      Post</div>
+      </div>
+      </div>
+      </div>
+      </div><br>
+      <div class="main-box">
+      <div class="container">
+      <div class="row">
+      <div class="left-box">
+      <div class="circle-pro">
+      <img src="Untitled-2.png">
+      </div>
+      </div>
+      <div class="right-box">
+      <div class="border-t post-1">
+      <div class="row">
+      <div class="col-lg-9"><h6>John Doe</h6></div>
+      <div class="col-lg-3 flot-right df"> <span>10 hours ago</span><i class="fa fa-angle-down ass" aria-hidden="true"></i></div>
+      </div>
+      <p>I am excited about the FWC Talent conference in sVeas march is anyone else planning to attend</p>
+
+      <div class="icons">
+                              
+         <a href=""><img src="like.png"> <span>2</span></a>
+         <a href=""><img src="com.png"><span>1</span></a>
+         <a href=""><img src="share.png"></a>
+      
+      
+      </div>
+    
+      </div>
+      </div>
+     
+      </div>
+    
+      </div>
+      </div><br>
+
+      <div class="main-box">
+         <div class="container">
+         <div class="row">
+         <div class="left-box">
+         <div class="circle-pro">
+         <img src="Untitled-2.png">
+         </div>
+         </div>
+         <div class="right-box">
+         <div class="border-t post-1">
+         <div class="row">
+         <div class="col-lg-9"><h6>John Doe</h6></div>
+         <div class="col-lg-3 flot-right df"> <span>10 hours ago</span><i class="fa fa-angle-down ass" aria-hidden="true"></i></div>
+         </div>
+         <p>I am excited about the FWC Talent conference in sVeas march is anyone else planning to attend</p>
+         <div class="icons">
+                              
+            <a href=""><img src="like.png"><span>2</span></a>
+            <a href=""><img src="com.png"><span>1</span></a>
+            <a href=""><img src="share.png"></a>
+         
+         
+         </div>
+         </div>
+         
+             
+         </div>
+         <div class="container st">
+            <div class="row">
+            <div class="left-box">
+            <div class="circle-pro">
+            <img src="Untitled-2.png">
+            </div>
+            </div>
+            <div class="right-box">
+            <div class="border-t">
+            <input class="form-control input-lg" id="inputlg" type="text" placeholder=".">
+            <!-- <div class="po-send ">Post</div> -->
+            </div>
+            </div>
+            <div class="col-lg-12" >
+            <div class="po-send "><i class="fa fa-paper-plane" aria-hidden="true"></i>
+            Post</div>
+            </div>
+            </div>
+            </div>
+
+<div class="fgh">
+   <div class="container">
+      <div class="row">
+      <div class="left-box">
+      <div class="circle-pro">
+      <img src="u-2.png">
+      </div>
+      </div>
+      <div class="right-box">
+      <div class="border-t post-1">
+      <div class="row">
+      <div class="col-lg-9"><h6>John Doe</h6></div>
+      <div class="col-lg-3 flot-right df"> <span>10 hours ago</span><i class="fa fa-angle-down ass" aria-hidden="true"></i></div>
+      </div>
+      <p>I am excited about the FWC Talent conference in sVeas march is anyone else planning to attend</p>
+
+
+      <div class="icons">
+                              
+         <a href=""><img src="like.png"><span>2</span></a>
+         <a href=""><img src="com.png"><span>1</span></a>
+         <a href=""><img src="share.png"></a>
+      
+      
+      </div>
+      </div>
+
+
+      <div class="fgh">
+         <div class="container">
+            <div class="row">
+            <div class="left-box tg">
+            <div class="circle-pro">
+            <img src="u-3.png">
+            </div>
+            </div>
+            <div class="right-box gt">
+            <div class="border-t post-1">
+            <div class="row">
+            <div class="col-lg-9"><h6>John Doe</h6></div>
+            <div class="col-lg-3 flot-right"> <span>10 hours ago</span><i class="fa fa-angle-down ass" aria-hidden="true"></i></div>
+            </div>
+            <p>I am excited about the FWC Talent conference in sVeas march is anyone else planning to attend</p>
+      
+            <div class="icons">
+                              
+               <a href=""><img src="like.png"><span>2</span></a>
+               <a href=""><img src="com.png"><span>1</span></a>
+               <a href=""><img src="share.png"></a>
+            
+            
+            </div>
+          
+            </div>
+            </div>
+           
+            </div>
+          
+            </div>
+      </div>
+      </div>
+      <div class="fgh">
+         <div class="container">
+            <div class="row">
+            <div class="left-box ">
+            <div class="circle-pro">
+            <img src="u-3.png">
+            </div>
+            </div>
+            <div class="right-box ">
+            <div class="border-t post-1">
+            <div class="row">
+            <div class="col-lg-9"><h6>John Doe</h6></div>
+            <div class="col-lg-3 flot-right"> <span>10 hours ago</span><i class="fa fa-angle-down ass" aria-hidden="true"></i></div>
+            </div>
+            <p>I am excited about the FWC Talent conference in sVeas march is anyone else planning to attend</p>
+      
+            <div class="icons">
+                              
+               <a href=""><img src="like.png"><span>2</span></a>
+               <a href=""><img src="com.png"><span>1</span></a>
+               <a href=""><img src="share.png"></a>
+            
+            
+            </div>
+          
+            </div>
+            </div>
+           
+            </div>
+          
+            </div>
+      </div>
+      </div>
+    
+      </div>
+      
+</div>
+
+       
+            </div>
+            </div>
+      </div>
+     
+      </div>
+      <div class="col-lg-4" >
+
+      
+           
+            <div class="img-post">
+               <img src="post.jpg">
+            </div>
+      <br>
+     
+         <div class="right-fbox">
+            <div class="news">
+               <h6>FWC NEWS</h6>
+            </div>
+            <div class="new-text">
+               <ul>
+                  <li>content of a page when looking at its layout. </li>
+                  <li>content of a page when looking at its layout. </li>
+                  <li>content of a page when looking at its layout. </li>
+                  <li>content of a page when looking at its layout. </li>
+                  <li>content of a page when looking at its layout. </li>
+               </ul>
+            </div>
+         </div>
+<br>
+      
+
+
+
+
+
+       
+      </div>
+      </div>
+      </div>
+      </section>
+      <div class="line">
+      </div>
+      <div class="line">
+      </div>
+      </div>
+      </div>
+      <!-- jQuery CDN - Slim version (=without AJAX) -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <!-- Popper.JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+      <!-- Bootstrap JS -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+      <script type="text/javascript">
+         $(document).ready(function () {
+         
+           $('#sidebarCollapse').on('click', function () {
+             $('#sidebar').toggleClass('active');
+             $('#content').toggleClass('sidebar-close');
+             $('.fixed-navbar').toggleClass('sidebar-close');
+           });
+         
+           $('#dropdownMenuButton1').click(function() {
+             $(this).toggleClass('show')
+             $('.navmenu1').toggleClass('show')
+           });
+           
+           $('[id="edit"]').hide();
+           
+           $('#start-edit').click(function() {
+             $('[id="edit"]').toggle();
+           })
+         
+           $('#save-profile').click(function() {
+             $('[id="edit"]').hide();
+           })
+         
+         });
+      </script>
+   </body>
+</html>
+
